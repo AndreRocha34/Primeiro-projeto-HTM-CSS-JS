@@ -95,6 +95,26 @@ section button:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
+.item-resultado {
+    display: flex;
+    align-items: center;
+}
+
+.item-resultado img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.item-resultado {
+    display: flex;
+    align-items: center; /* Centraliza os itens verticalmente */
+  }
+  
+  .item-imagem {
+    margin-right: 2rem; /* Espaçamento entre a imagem e o texto */
+  }
+  
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
     color: #45474B; /* Cor do texto */
@@ -111,6 +131,11 @@ footer {
     position: absolute; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
+}
+@media (max-width: 768px) {
+    .item-resultado {
+        flex-direction: column; /* Para telas menores, empilhe os elementos */
+    }
 }
 
 @media (max-width: 768px) {

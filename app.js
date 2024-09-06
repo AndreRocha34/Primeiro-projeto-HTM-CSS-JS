@@ -25,10 +25,13 @@ function pesquisar() {
       // Concatena HTML para criar um novo elemento de resultado
       resultados += `
       <div class="item-resultado">
+      <img src="${dado.imagem}" alt="${dado.titulo}" class="item-imagem">
+      <div class="item-texto">
         <h2><a href="https://pt.wikipedia.org/wiki/Alface" target="_blank">${dado.titulo}</a></h2>
         <p class="descricao-meta">${dado.descricao}</p>
         <a href=${dado.link} target="_blank">Veja como plantar</a>
       </div>
+    </div>
       `;      
       }
     }
